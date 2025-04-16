@@ -1,0 +1,144 @@
+@use '../../styles/variables' as *;
+
+.orderItem {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: $color-dark-gunmetal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buyOrder {
+  border-left: 4px solid $color-malachite;
+
+  .priceValue {
+    color: $color-malachite;
+  }
+
+  .sideIndicator {
+    background-color: rgba(0, 200, 83, 0.2);
+    color: $color-malachite;
+  }
+}
+
+.sellOrder {
+  border-left: 4px solid $color-coquelicot;
+
+  .priceValue {
+    color: $color-coquelicot;
+  }
+
+  .sideIndicator {
+    background-color: rgba(255, 61, 0, 0.2);
+    color: $color-coquelicot;
+  }
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pair {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: $color-white;
+}
+
+.exchange {
+  font-size: 0.8rem;
+  color: $color-quick-silver;
+  background-color: rgba($color-white, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.orderDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.7rem;
+  color: $color-quick-silver;
+  margin-bottom: 2px;
+}
+
+.priceValue, .quantityValue {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba($color-white, 0.1);
+}
+
+.sideIndicator {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  color: $color-quick-silver;
+}
+
+.total {
+  min-width: 100px;
+}
+
+.totalInfo {
+  margin-top: 4px;
+}
+
+.totalLabel {
+  font-size: 0.7rem;
+  color: $color-quick-silver;
+  margin-bottom: 2px;
+}
+
+.totalValue {
+  font-weight: bold;
+  color: $color-white;
+}
+
+.alerting {
+  box-shadow: 0 0 0 2px $color-vivid-yellow, 0 0 8px 2px $color-gold;
+  background-color: $color-pine-tree;
+}
+
+.rules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0 10px;
+  max-width: 50%;
+}
+
+.ruleTag {
+  font-size: 0.7rem;
+  background-color: rgba($color-vivid-yellow, 0.1);
+  color: $color-vivid-yellow;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}

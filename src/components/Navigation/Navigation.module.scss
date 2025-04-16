@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+
+.navbar {
+  height: $navbar-height;
+  padding: 1rem 0;
+  background: $color-cultured;
+}
+
+.navbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-dark-charcoal;
+  font-weight: normal;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid $color-dark-charcoal;
+}
+
+.toggleButton {
+  padding: 0.5rem 1rem;
+  background: $color-dark-charcoal;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

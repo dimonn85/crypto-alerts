@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: $color-eerie-black;
+  color: $color-white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
